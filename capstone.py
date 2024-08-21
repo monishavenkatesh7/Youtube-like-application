@@ -8,21 +8,17 @@ import numpy as np
 with open('clustering_labels.pkl', 'rb') as f:
     labels = pickle.load(f)
 
-# Load the TF-IDF vectorized matrix
-with open('tfidf_matrix.pkl', 'rb') as f:
-    X = pickle.load(f)
+z = []
+for i in range(15):
+    try:
+        # Load the TF-IDF vectorized matrix
+        with open(f'tfidf_matrix_{i}.pkl', 'rb') as f:
+            z.append(pickle.load(f))
+    except:
+        pass        
+    # print(f'read tfidf_matrix_{i}.pkl')
 
-# z = []
-# for i in range(15):
-#     try:
-#         # Load the TF-IDF vectorized matrix
-#         with open(f'tfidf_matrix_{i}.pkl', 'rb') as f:
-#             z.append(pickle.load(f))
-#     except:
-#         pass        
-#     # print(f'read tfidf_matrix_{i}.pkl')
-
-# X = np.vstack(z)  
+X = np.vstack(z)  
 
 # Load the vectorizer
 with open('vectorizer.pkl', 'rb') as f:
