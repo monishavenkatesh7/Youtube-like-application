@@ -23,11 +23,11 @@ sudo apt install git curl unzip tar make sudo vim wget -y
 ```
 
 ```bash
-git clone https://github.com/monishavenkatesh7/sample_app_2.git
+git clone https://github.com/monishavenkatesh7/ML-Capstone-project.git
 ```
 
 ```bash
-cd sample_app_2
+cd ML-Capstone-project
 ```
 
 ```bash
