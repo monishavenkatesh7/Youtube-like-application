@@ -44,12 +44,12 @@ pip install -r requirements.txt --break-system-packages
 
 #Temporary running
 ```bash
-python3 -m streamlit run app.py
+python3 -m streamlit run capstone.py
 ```
 
 #Permanent running
 ```bash
-nohup python3 -m streamlit run app.py
+nohup python3 -m streamlit run capstone.py
 ```
 
 Note: Streamlit runs on this port: 8501
