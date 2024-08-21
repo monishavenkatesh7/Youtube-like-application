@@ -1,3 +1,5 @@
+##Note: The link for the application is http://13.53.177.53:8501 please paste it in any browser for accesing the application
+
 # Creating a YouTube like application
 
 ## Getting the data from youtube
